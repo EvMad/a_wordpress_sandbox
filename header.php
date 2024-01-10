@@ -2,7 +2,7 @@
 /** */
 ?><!doctype html>
 
-<html>
+<html <?php language_attributes(); ?> >
 
     <head>
         <meta charset="">
