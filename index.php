@@ -2,8 +2,8 @@
 /** */
 
 
-getHeader();
+get_header();
 
-getFooter();
+get_footer();
 
 ?>
