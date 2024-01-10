@@ -1,0 +1,9 @@
+<?php
+/** */
+
+
+getHeader();
+
+getFooter();
+
+?>
