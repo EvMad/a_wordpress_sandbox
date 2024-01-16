@@ -47,5 +47,5 @@ endif;
         ?>
 
     </footer>
-
+    <?php endif; ?>
 </article>
