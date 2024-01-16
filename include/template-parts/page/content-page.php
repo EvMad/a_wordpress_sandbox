@@ -14,4 +14,10 @@ if ( has_post_thumbnail() ) :
 endif;
 ?>
 
+<div class="entry-content">
+    <?php
+    the_content();
+    ?>
+</div>
+
 </article>
