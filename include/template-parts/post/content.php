@@ -27,7 +27,14 @@ endif;
 </div>
     <?php elseif( is_single() ) : ?>
         <div class="entry-content">
-            <?php the_content(); ?>
-    </div>
+            <?php the_content();
+            
+            wp_link_pages( array(
+                'before' => '<div class="page_links">' . esc_html_( 'Pages:', 'ninestars'),
+                'after' => '</div>',
+            ) );
 
+            ?>
+    </div>
+    <?php endif; ?>
 </article>
