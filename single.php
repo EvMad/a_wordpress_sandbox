@@ -13,6 +13,15 @@ while ( have_posts() ) :
 
     get_template_part( 'template-parts/post/content' );
 endwhile;
+
+// comments template
+
+if ( comments_open() || get_comments_number() ) :
+
+    comments_template();
+
+endif;
+
 ?>
 </main>
 
