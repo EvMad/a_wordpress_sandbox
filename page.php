@@ -8,6 +8,12 @@
 
         get_template_part( 'template-parts/page/content', 'page' );
 
+        //comments
+
+        if ( comments_open() || get_comments_number() ) :
+            comments_template();
+        endif;
+
     endwhile;
      ?>
     </main>
