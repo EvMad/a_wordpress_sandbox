@@ -13,6 +13,16 @@ get_header();
                 the_archive_description( '<div class="archive-description">', '</div>');
                 ?>
             </header>
+
+            <?php 
+            
+            while ( have_posts() ) :
+                thepost();
+                get_template_part( 'template-parts/post/content' );
+            endwhile;
+            
+            ?>
+
             <?php endif; ?>
     </main>
 </div>
