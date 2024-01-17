@@ -26,6 +26,15 @@
 
                 elseif ( is_search() ) :
     ?>
+    <p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with something differnt.' ) ?></p>
+    <?php get_search_form(); 
+    else
+    ?>
+
+    <p><?php esc_html_e( 'It seems we cannot find what you are looking for.') ?></p>
+    <?php get_search_form(); 
+    endif;
+    ?>
 </div>
 
 </section>
