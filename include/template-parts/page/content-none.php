@@ -31,7 +31,7 @@
     else
     ?>
 
-    <p><?php esc_html_e( 'It seems we cannot find what you are looking for.') ?></p>
+    <p><?php esc_html_e( 'It seems we cannot find what you are looking for. Perhaps searching will help.') ?></p>
     <?php get_search_form(); 
     endif;
     ?>
