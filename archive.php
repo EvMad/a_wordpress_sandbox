@@ -20,6 +20,11 @@ get_header();
                 thepost();
                 get_template_part( 'template-parts/post/content' );
             endwhile;
+
+            echo paginate_links( [
+                'prev_text' => esc_html__( 'Prev', 'Sandbox'),
+                'next_text' => esc_html__( 'Next', 'Sandbox'),
+            ] );
             
             ?>
 
