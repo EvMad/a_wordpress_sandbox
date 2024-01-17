@@ -25,6 +25,10 @@ get_header();
                 'prev_text' => esc_html__( 'Prev', 'Sandbox'),
                 'next_text' => esc_html__( 'Next', 'Sandbox'),
             ] );
+
+            else
+
+            get_template_part( 'template-parts/page/content', 'none' )
             
             ?>
 
