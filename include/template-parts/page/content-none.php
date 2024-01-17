@@ -12,7 +12,7 @@
     <?php 
     if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
-        printif(
+        printf(
             '<p>' . wp_kses(
                 __( 'Ready to publish your first post? <a href="%1$s"> Get Started Here </a>', 'Sandbox'),
                 array(
