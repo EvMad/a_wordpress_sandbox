@@ -9,5 +9,8 @@
 <?php the_excerpt(); ?>
 </div>
 
+<div class="entry-footer">
+<?php printf( '<a href="%s">Read More</a>', esc_url( get_the_permalink() ) ); ?>    
+</div>
 
 </article>
