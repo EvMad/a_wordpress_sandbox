@@ -6,7 +6,7 @@
 
 <main id="main" class="site-main">
 
-    <section claass="error-404 not-found">
+    <section class="error-404 not-found">
 
     </section>
 
