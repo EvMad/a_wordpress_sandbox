@@ -28,7 +28,7 @@ if ( post_password_required() ) {
         <?php
         wp_list_comments( [
             'style' => 'ol',
-            'short-ping' => true
+            'short_ping' => true
         ] );
         ?>
     </ol>
