@@ -23,5 +23,6 @@ if ( post_password_required() ) {
         }
         ?>
     </h2>
+    <?php the_comments_navigation(); ?>
 <?php endif; ?>
 </div>
