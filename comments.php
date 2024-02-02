@@ -17,7 +17,8 @@ if ( post_password_required() ) {
             );
         } else {
             printf(
-                esc_html__( 'Comments (%1$s)', 'Sandbox' )
+                esc_html__( 'Comments (%1$s)', 'Sandbox' ),
+                intval( $comment_count )
             );
         }
         ?>
