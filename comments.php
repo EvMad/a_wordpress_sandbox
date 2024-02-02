@@ -15,6 +15,10 @@ if ( post_password_required() ) {
             printf(
                 esc_html__( 'Comments (1)', 'Sandbox' )
             );
+        } else {
+            printf(
+                esc_html__( 'Comments (%1$s)', 'Sandbox' )
+            );
         }
         ?>
     </h2>
