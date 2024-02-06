@@ -6,6 +6,8 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
         load_theme_textdomain( 'Sandbox', get_template_directory() . '/languages' );
 
+        add_theme_support( 'automatic-feed-links' );
+
     }
 
 }
