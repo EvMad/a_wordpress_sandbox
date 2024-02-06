@@ -10,7 +10,7 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
         add_theme_support( 'title-tag' );
 
-        add_theme_support( 'thumbnails' );
+        add_theme_support( 'post-thumbnails' );
 
     }
 
