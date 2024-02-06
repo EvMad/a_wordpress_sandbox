@@ -12,6 +12,11 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
         add_theme_support( 'post-thumbnails' );
 
+        add_theme_support( 'custom-background', apply_filters( 'sandbox_custom_background_args', array(
+            'default-color' => 'ffffff',
+            'default-image' => '',
+        ) ) );
+
     }
 
 }
