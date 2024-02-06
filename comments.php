@@ -38,9 +38,9 @@ if ( post_password_required() ) {
     if ( ! comments_open() ) {
         printf(
             '<p class="no-comments">%1$s</p>',
-            esc_html( 'Comments are closed', 'herobiz' )
+            esc_html( 'Comments are closed', 'Sandbox' )
         );
     }
     ?>
-<?php endif; ?>
+<?php endif; comment_form(); ?>
 </div>
