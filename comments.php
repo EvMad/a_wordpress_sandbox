@@ -32,5 +32,15 @@ if ( post_password_required() ) {
         ] );
         ?>
     </ol>
+    <?php 
+    the_comments_navigation();
+
+    if ( ! comments_open() ) {
+        printf(
+            '<p class="no-comments">%1$s</p>',
+            esc_html( 'Comments are closed', 'herobiz' )
+        );
+    }
+    ?>
 <?php endif; ?>
 </div>
