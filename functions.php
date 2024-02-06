@@ -25,6 +25,8 @@ if ( ! function_exists( 'sandbox_setup') ) {
             'caption',
         ) );
 
+        add_theme_support( 'customize-selective-refresh-widgets' );
+
     }
 
 }
