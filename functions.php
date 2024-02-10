@@ -82,4 +82,14 @@ function sandbox_sidebar_widgets_init() {
 
 add_action( 'widgits_init', 'sandbox_sidebar_widget_init' );
 
+function sandbox_public_scripts() {
+
+}
+add_action( 'wp_enqueue_scripts', 'sandbox_public_scripts' );
+
+function sandbox_admin_scripts() {
+
+}
+add_action( 'wp_enqueue_scripts', 'sandbox_admin_scripts' );
+
 ?>
