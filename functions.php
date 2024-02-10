@@ -27,14 +27,23 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
         add_theme_support( 'customize-selective-refresh-widgets' );
 
-        add_theme_support( 'custom-logo', array(
+        add_theme_support( 'custom-logo', [
             'height' => 250,
             'width' => 250,
             'flex-width' => true,
             'flex-height' => true,
+        ]
+           
         );
-        )
 
+        add_theme_support( 'custom-header', [
+            'flex-width' => true,
+            'width' => 1600,
+            'flex-height' => true,
+            'height' => 450,
+            'default-image' => '',
+        ]
+        );
     }
 
 }
