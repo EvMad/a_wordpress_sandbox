@@ -49,6 +49,7 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
         register_nav_menus( array(
             'primary' => esc_html__( 'Primary', 'sandbox' ),
+            'footer' => esc_html__( 'Footer Menu', 'sandbox ' ),
         ) );
     }
 
@@ -57,12 +58,28 @@ if ( ! function_exists( 'sandbox_setup') ) {
 add_action( 'after_setup_theme', 'sandbox_setup' );
 
 
-@global int
+// @global int
 
 function sandbox_content_width() {
     $GLOBALS['content_width'] = apply_filters( 'sandbox_content_width', 1170 );
 }
 
 add_action( 'after_setup_theme', 'sandbox_content_width', 0);
+
+// @since 
+
+function sandbox_sidebar_widgets_init() {
+    register_sidebar( array(
+        'name' => esc_html__( 'Sidebar', 'sandbox' ),
+        'id' => 'default-sidebar',
+        'description' => esc_html__( 'Add widgets here.', 'sandbox' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
+}
+
+
 
 ?>
