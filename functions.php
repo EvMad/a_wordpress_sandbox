@@ -80,6 +80,6 @@ function sandbox_sidebar_widgets_init() {
     ) );
 }
 
-
+add_action( 'widgits_init', 'sandbox_sidebar_widget_init' );
 
 ?>
