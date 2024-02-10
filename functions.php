@@ -52,4 +52,13 @@ if ( ! function_exists( 'sandbox_setup') ) {
 
 add_action( 'after_setup_theme', 'sandbox_setup' );
 
+
+@global int
+
+function sandbox_content_width() {
+    $GLOBALS['content_width'] = apply_filters( 'sandbox_content_width', 1170 );
+}
+
+add_action( 'after_setup_theme', 'sandbox_content_width', 0);
+
 ?>
