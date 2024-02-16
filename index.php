@@ -18,12 +18,14 @@
     
     endif;
     
-    get_footer();
+    
 ?>
 
 
     </main>
 </div>
+
+<?php get_footer(); ?>
 
 
 
