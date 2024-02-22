@@ -18,7 +18,7 @@ get_header();
             
             while ( have_posts() ) :
                 thepost();
-                get_template_part( 'template-parts/post/content' );
+                get_template_part( 'template-parts/post/content',  get_post_format()  );
             endwhile;
 
             echo paginate_links( [
