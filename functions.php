@@ -84,6 +84,8 @@ add_action( 'widgits_init', 'sandbox_sidebar_widget_init' );
 
 function sandbox_public_scripts() {
 
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', [], wp_rand(), 'all' );
+
 }
 add_action( 'wp_enqueue_scripts', 'sandbox_public_scripts' );
 
