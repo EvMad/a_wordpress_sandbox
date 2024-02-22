@@ -1,6 +1,7 @@
 <?php
 /** */
 
+echo get_post_format();
 get_header();
 ?>
 
