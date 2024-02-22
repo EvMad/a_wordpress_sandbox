@@ -87,6 +87,8 @@ function sandbox_public_scripts() {
     wp_enqueue_style( 'default', get_template_directory_uri() . '/assets/css/default.css', [], wp_rand(), 'all' );
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', [], wp_rand(), 'all' );
 
+    wp_enqueue_scripts( 'main', get_template_directory_uri() . '/assets/js/main.js', [ 'jquery' ], wp_rand(), true );
+
 }
 add_action( 'wp_enqueue_scripts', 'sandbox_public_scripts' );
 
